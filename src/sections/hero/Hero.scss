@@ -1,0 +1,19 @@
+.hero {
+  padding: 24px 36px 100px;
+  background: #1b2330;
+  position: relative;
+  .illustration {
+    width: 304px;
+    height: 225px;
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+  }
+  &__bg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+}

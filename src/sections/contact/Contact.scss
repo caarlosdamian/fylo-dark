@@ -1,3 +1,5 @@
+@use "../../utils/globals.scss";
+
 .contact {
   padding: 20px;
   background-color: #181f2b;
@@ -19,6 +21,12 @@
     right: 0;
     margin: auto;
     width: 336px;
+
+    @include globals.devices("tablet") {
+     padding: 42px 77px 22px;
+     width: 863px;
+      top: 250px;
+    }
 
     &--info {
       display: flex;
@@ -49,6 +57,10 @@
       flex-direction: column;
       gap: 24px;
 
+      @include globals.devices("tablet") {
+        flex-direction: row;
+        width: 100%;
+      }
       .input {
         padding: 19px 29px;
         background: #ffffff;
@@ -57,6 +69,11 @@
         max-height: 48px;
         border: none;
         outline: none;
+
+        @include globals.devices("tablet") {
+          min-width: 480px;
+        }
+
         &::placeholder {
           font-family: "Open Sans";
           font-style: normal;

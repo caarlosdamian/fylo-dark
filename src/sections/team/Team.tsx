@@ -4,7 +4,7 @@ import "./Team.scss";
 
 export const Team = () => {
   return (
-    <section className="team">
+    <section className="team" id="team">
       <img src={illustrationStayProductive} alt="illustrationStayProductive" />
       <div className="team__info">
         <h2 className="team__info--title">Stay productive, wherever you are</h2>

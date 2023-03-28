@@ -1,3 +1,5 @@
+@use "../../utils/globals.scss";
+
 .team {
   background-color: #181f2b;
   padding: 120px 28px 160px;
@@ -6,6 +8,12 @@
   justify-content: center;
   flex-direction: column;
   gap: 48px;
+
+  @include globals.devices("tablet") {
+    padding: 120px 105px 160px;
+    flex-direction: row;
+    gap: 54px;
+  }
 
   &__info {
     display: flex;
@@ -21,6 +29,13 @@
       line-height: 24px;
       text-align: center;
       color: #ffffff;
+
+      @include globals.devices("tablet") {
+        font-size: 40px;
+        line-height: 50px;
+        text-align: start;
+        max-width: 334px;
+      }
     }
     &--desc {
       font-family: "Open Sans";
@@ -29,6 +44,11 @@
       font-size: 14px;
       line-height: 21px;
       color: #ffffff;
+
+      @include globals.devices("tablet") {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
     &--button {
       display: flex;
@@ -43,6 +63,14 @@
       line-height: 16px;
       border-bottom: 1px solid #62e0d9;
       padding-bottom: 6px;
+      &:hover {
+        color: white;
+        border-bottom: 1px solid white;
+      }
+      @include globals.devices("tablet") {
+        font-size: 16px;
+        line-height: 22px;
+      }
     }
   }
 }

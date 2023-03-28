@@ -10,7 +10,7 @@ export const Footer = () => {
         <img src={logo} alt="footer__logo" className="logo" />
       </div>
       <div className="footer__details">
-        <div className="footer__details--info">
+        <div className="footer__details--info" id="location-desc">
           <div className="footer__info--wrapper">
             <img src={iconLocation} alt="iconLocation" id="location" />
             <span>

@@ -6,7 +6,7 @@ import "./Features.scss";
 
 export const Features = () => {
   return (
-    <section className="features">
+    <section className="features" id="features">
       <div className="features__wrapper">
         <h1 className="features__wrapper--title">
           All your files in one secure location, accessible anywhere.

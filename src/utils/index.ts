@@ -15,14 +15,17 @@ export const navLinks = [
   {
     id: 1,
     title: "Features",
+    url: '#features'
   },
   {
     id: 2,
     title: "Team",
+    url: '#team'
   },
   {
     id: 3,
     title: "Sign In",
+    url: '#'
   },
 ];
 

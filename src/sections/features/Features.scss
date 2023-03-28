@@ -1,3 +1,5 @@
+@use "../../utils/globals.scss";
+
 .features {
   background-color: #181f2b;
   height: 100%;
@@ -6,6 +8,10 @@
   align-items: center;
   justify-content: center;
   padding: 28px;
+
+  @include globals.devices("tablet") {
+    padding: 42px 280px;
+  }
 
   &__wrapper {
     z-index: 2;
@@ -17,12 +23,20 @@
     justify-content: center;
     flex-direction: column;
     gap: 15px;
+    @include globals.devices("tablet") {
+      width: 734px;
+      top: -400px;
+    }
     &--title {
       font-weight: 700;
       font-size: 24px;
       line-height: 36px;
       text-align: center;
       color: #ffffff;
+      @include globals.devices("tablet") {
+        font-size: 40px;
+        line-height: 60px;
+      }
     }
 
     &--subtitle {
@@ -33,6 +47,10 @@
       text-align: center;
       color: #ffffff;
       margin-bottom: 16px;
+      @include globals.devices("tablet") {
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
   }
 
@@ -43,6 +61,12 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
+    @include globals.devices("tablet") {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px 147px;
+      margin-top: 120px;
+    }
 
     .feature {
       display: flex;
@@ -52,11 +76,19 @@
       gap: 8px;
       width: 100%;
 
-      .feature__img{
+      @include globals.devices("tablet") {
+        gap: 16px;
+      }
+
+      .feature__img {
         margin-bottom: 18px;
         height: 80px;
         width: 80px;
         object-fit: contain;
+        @include globals.devices("tablet") {
+          height: 104px;
+          width: 104px;
+        }
       }
 
       .feature__title {
@@ -65,6 +97,10 @@
         line-height: 24px;
         text-align: center;
         color: #ffffff;
+        @include globals.devices("tablet") {
+          font-size: 20px;
+          line-height: 23px;
+        }
       }
       .feature__desc {
         font-family: "Open Sans";

@@ -1,3 +1,5 @@
+@use "../../utils/globals.scss";
+
 .btn {
   padding: 16px;
   min-width: 100%;
@@ -12,7 +14,12 @@
   color: #ffffff;
   cursor: pointer;
 
-  &:hover{
-    background: #8ADAE3;
+  @include globals.devices("tablet") {
+    width: 280px;
+    min-width: 200px;
+  }
+
+  &:hover {
+    background: #8adae3;
   }
 }

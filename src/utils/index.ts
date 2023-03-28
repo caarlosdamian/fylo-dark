@@ -3,6 +3,9 @@ import {
   iconAnyFile,
   iconCollaboration,
   iconSecurity,
+  profileOne,
+  profileThree,
+  profileTwo,
 } from "../assets";
 
 export const navLinks = [
@@ -44,5 +47,37 @@ export const featuresInfo = [
     title: "Store any type of file",
     desc: "Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.",
     img: iconAnyFile,
+  },
+];
+
+export interface Testimonial {
+  id: string;
+  desc: string;
+  name: string;
+  title: string;
+  img: string;
+}
+
+export const testimonialInfo: Testimonial[] = [
+  {
+    id: "1b",
+    desc: "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+    name: "Satish Patel",
+    title: "Founder & CEO, Huddle",
+    img: profileOne,
+  },
+  {
+    id: "2b",
+    desc: "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+    name: "Bruce McKenzie",
+    title: "Founder & CEO, Huddle",
+    img: profileTwo,
+  },
+  {
+    id: "3b",
+    desc: "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+    name: "Iva Boyd",
+    title: "Founder & CEO, Huddle",
+    img: profileThree,
   },
 ];

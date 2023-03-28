@@ -11,7 +11,9 @@ export const Header = () => {
       </div>
       <div className="header__links">
         {navLinks.map((item) => (
-          <a key={item.id} href="" className="header__links--link">{item.title}</a>
+          <a key={item.id} href="" className="header__links--link">
+            {item.title}
+          </a>
         ))}
       </div>
     </nav>

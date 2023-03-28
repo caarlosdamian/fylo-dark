@@ -2,6 +2,8 @@
   padding: 20px;
   background-color: #181f2b;
   padding-top: 142px;
+  position: relative;
+  height: 350px;
 
   &__wrapper {
     background: #1b2330;
@@ -11,6 +13,12 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 336px;
 
     &--info {
       display: flex;

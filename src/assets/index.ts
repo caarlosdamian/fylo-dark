@@ -15,6 +15,9 @@ import logo from "./logo.svg";
 import profileOne from "./profile-1.jpg";
 import profileTwo from "./profile-2.jpg";
 import profileThree from "./profile-3.jpg";
+import fb from './fb.svg';
+import instagram from './instagram.svg';
+import twitter from './twitter.svg';
 
 export {
   bgCurvyMobile,
@@ -33,4 +36,7 @@ export {
   profileOne,
   profileTwo,
   profileThree,
+  fb,
+  instagram,
+  twitter
 };

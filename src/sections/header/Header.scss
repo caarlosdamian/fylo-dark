@@ -15,7 +15,7 @@
   &__links {
     display: flex;
     gap: 24px;
-   
+
     &--link {
       text-decoration: none;
       font-family: "Raleway";
@@ -24,6 +24,10 @@
       font-size: 12px;
       line-height: 14px;
       color: #ffffff;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

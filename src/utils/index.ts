@@ -1,11 +1,14 @@
 import {
+  fb,
   iconAccessAnywhere,
   iconAnyFile,
   iconCollaboration,
   iconSecurity,
+  instagram,
   profileOne,
   profileThree,
   profileTwo,
+  twitter,
 } from "../assets";
 
 export const navLinks = [
@@ -79,5 +82,53 @@ export const testimonialInfo: Testimonial[] = [
     name: "Iva Boyd",
     title: "Founder & CEO, Huddle",
     img: profileThree,
+  },
+];
+
+export const footerLinks = [
+  {
+    id: "1c",
+    label: "About Us",
+  },
+  {
+    id: "2c",
+    label: "Jobs",
+  },
+  {
+    id: "3c",
+    label: "Press",
+  },
+  {
+    id: "4c",
+    label: "Blog",
+  },
+];
+export const footerLinksContact = [
+  {
+    id: "1d",
+    label: "Contact Us",
+  },
+  {
+    id: "2d",
+    label: "Terms",
+  },
+  {
+    id: "3d",
+    label: "Privacy",
+  },
+];
+
+export const mediaIcons = [
+  {
+    id: "1e",
+    icon: fb,
+  },
+  {
+    id: "2e",
+    icon: twitter,
+  },
+  {
+    id: "3e",
+    icon: instagram,
   },
 ];

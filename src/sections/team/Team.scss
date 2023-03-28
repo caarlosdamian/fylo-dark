@@ -1,0 +1,48 @@
+.team {
+  background-color: #181f2b;
+  padding: 120px 28px 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    &--title {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      color: #ffffff;
+    }
+    &--desc {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #ffffff;
+    }
+    &--button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #62e0d9;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      border-bottom: 1px solid #62e0d9;
+      padding-bottom: 6px;
+    }
+  }
+}

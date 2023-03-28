@@ -1,3 +1,5 @@
+@use "../../utils/globals.scss";
+
 .hero {
   padding: 24px 36px 100px;
   background: #1b2330;
@@ -9,11 +11,14 @@
     z-index: 2;
     position: relative;
   }
-  &__bg{
+  &__bg {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
     margin: auto;
+    @include globals.devices("tablet") {
+      bottom: -130px;
+    }
   }
 }

@@ -38,5 +38,6 @@ export {
   profileThree,
   fb,
   instagram,
-  twitter
+  twitter,
+  bgCurvyDesktop
 };

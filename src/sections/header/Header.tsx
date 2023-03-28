@@ -1,5 +1,5 @@
 import React from "react";
-import { bgCurvyMobile, logo } from "../../assets";
+import { logo } from "../../assets";
 import { navLinks } from "../../utils";
 import "./Header.scss";
 
